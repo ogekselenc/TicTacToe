@@ -1,0 +1,11 @@
+/home/ognjen/TicTacToeClient/Shared/bin/Debug/net6.0/TicTacToeClient.Shared.deps.json
+/home/ognjen/TicTacToeClient/Shared/bin/Debug/net6.0/TicTacToeClient.Shared.dll
+/home/ognjen/TicTacToeClient/Shared/bin/Debug/net6.0/TicTacToeClient.Shared.pdb
+/home/ognjen/TicTacToeClient/Shared/obj/Debug/net6.0/TicTacToeClient.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/home/ognjen/TicTacToeClient/Shared/obj/Debug/net6.0/TicTacToeClient.Shared.AssemblyInfoInputs.cache
+/home/ognjen/TicTacToeClient/Shared/obj/Debug/net6.0/TicTacToeClient.Shared.AssemblyInfo.cs
+/home/ognjen/TicTacToeClient/Shared/obj/Debug/net6.0/TicTacToeClient.Shared.csproj.CoreCompileInputs.cache
+/home/ognjen/TicTacToeClient/Shared/obj/Debug/net6.0/TicTacToeClient.Shared.dll
+/home/ognjen/TicTacToeClient/Shared/obj/Debug/net6.0/refint/TicTacToeClient.Shared.dll
+/home/ognjen/TicTacToeClient/Shared/obj/Debug/net6.0/TicTacToeClient.Shared.pdb
+/home/ognjen/TicTacToeClient/Shared/obj/Debug/net6.0/ref/TicTacToeClient.Shared.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/TicTacToeClient.Server.props" />
+</Project>

@@ -1,0 +1,47 @@
+@page "/players"
+@inject PlayerService PlayerService
+
+<h3 class="text-center mt-3">Players</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <ul class="list-group">
+                @foreach (var player in Players)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        @player.Name
+                        <span class="badge bg-primary rounded-pill">Score: @player.Score</span>
+                    </li>
+                }
+            </ul>
+
+            <h4 class="mt-4">Add Player</h4>
+            <div class="input-group mb-3">
+                <input @bind="newPlayer.Name" class="form-control" placeholder="Enter name" />
+                <button class="btn btn-success" @onclick="AddPlayer">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<Player> Players = new();
+    private Player newPlayer = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Players = await PlayerService.GetPlayers();
+        PlayerService.OnChange += async () =>
+        {
+            Players = await PlayerService.GetPlayers();
+            StateHasChanged();
+        };
+    }
+
+    private async Task AddPlayer()
+    {
+        await PlayerService.AddPlayer(newPlayer);
+        newPlayer = new Player();
+    }
+}
